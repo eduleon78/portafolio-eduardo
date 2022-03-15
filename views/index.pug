@@ -1,0 +1,259 @@
+extends layout 
+
+block content
+  // Navigation
+  nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+    a.navbar-brand.js-scroll-trigger(href='#page-top')
+      span.d-block.d-lg-none Eduardo León
+      span.d-none.d-lg-block
+        img.img-fluid.img-profile.rounded.mx-auto.mb-2(src='/assets/img/perfil.jpeg' alt='...')
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarResponsive.collapse.navbar-collapse
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#about') Acerca De  
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#experience') Experiencia
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#education') Educación 
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#skills') Habilidades
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#interests') Intereses
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#awards') Logros 
+  // Page Content
+  .container-fluid.p-0
+    // About
+    section#about.resume-section
+      .resume-section-content
+        h1.mb-0
+          | Eduardo
+          span.text-primary León 
+        .subheading.mb-5
+          | 6301 Calle miramar &middot; Porlamar, Nueva Esparta, Venezuela &middot; (+58) 0424 8587119 &middot;
+          a(href='mailto:eduleon78@gmail.com') eduleon78@gmail.com
+        p.lead.mb-5
+          | Soy un entusiaste desarrollador con inclinacion al lado del servidor. Conciente de lo fundamental de la tecnologia en estos tiempos, Cada dia no paro de actualizar mis conocimientos y aprender nuevas tecnologias, ese es mi proposito. 
+        .social-icons
+          a.social-icon(href='https://www.linkedin.com/in/eduardo-a-le%C3%B3n-s-8402a05b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B82s8dG%2FiQ1ygQY3rz9RVWA%3D%3D')
+            i.fab.fa-linkedin-in
+          a.social-icon(href='https://github.com/eduleon78')
+            i.fab.fa-github
+          a.social-icon(href='https://twitter.com/Eduleon78')
+            i.fab.fa-twitter
+          a.social-icon(href='https://www.facebook.com/EDULEON78')
+            i.fab.fa-facebook-f
+    hr.m-0
+    // Experience
+    section#experience.resume-section
+      .resume-section-content
+        h2.mb-5 Experiencia
+        .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+          .flex-grow-1
+            h3.mb-0 Senior Web Developer
+            .subheading.mb-3 Intelitec Solutions
+            p
+              | Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+          .flex-shrink-0
+            span.text-primary March 2013 - Present
+        .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+          .flex-grow-1
+            h3.mb-0 Web Developer
+            .subheading.mb-3 Intelitec Solutions
+            p
+              | Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+          .flex-shrink-0
+            span.text-primary December 2011 - March 2013
+        .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+          .flex-grow-1
+            h3.mb-0 Junior Web Designer
+            .subheading.mb-3 Shout! Media Productions
+            p
+              | Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
+          .flex-shrink-0
+            span.text-primary July 2010 - December 2011
+        .d-flex.flex-column.flex-md-row.justify-content-between
+          .flex-grow-1
+            h3.mb-0 Web Design Intern
+            .subheading.mb-3 Shout! Media Productions
+            p
+              | Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+          .flex-shrink-0
+            span.text-primary September 2008 - June 2010
+    hr.m-0
+    // Education
+    section#education.resume-section
+      .resume-section-content
+        h2.mb-5 Educacion
+        .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+          .flex-grow-1
+            h3.mb-0 U.E Fray Elias Maria Sendra  
+            .subheading.mb-3 Bachiller en Humanidades 
+            div Computer Science - Web Development Track
+            p GPA: 3.23
+          .flex-shrink-0
+            span.text-primary Octubre 1991 - 1996
+        .d-flex.flex-column.flex-md-row.justify-content-between
+          .flex-grow-1
+            h3.mb-0 Universidad Santa Maria
+            .subheading.mb-3 Abogado
+            div Titulo de abogado 
+            p GPA: 3.56
+          .flex-shrink-0
+            span.text-primary Octubre 1996 - 2001
+        .d-flex.flex-column.flex-md-row.justify-content-between
+          .flex-grow-1
+            h3.mb-0 Universidad de Michigan
+            .subheading.mb-1 Interactive With JavaScript
+            .subheading.mb-2 Introduccion to CSS3 
+            div Computer Science - Web Development Track  
+            p GPA: 3.56
+          .flex-shrink-0
+            span.text-primary Mayo 13 2020
+    hr.m-0
+    // Skills
+    section#skills.resume-section
+      .resume-section-content
+        h2.mb-5 Habilidades 
+        .subheading.mb-3 Languajes de Programación &amp; Herramientas 
+        ul.list-inline.dev-icons
+          li.list-inline-item
+            i.fab.fa-html5
+          li.list-inline-item
+            i.fab.fa-css3-alt
+          li.list-inline-item
+            i.fab.fa-js-square
+          li.list-inline-item
+            i.fab.fa-angular
+          li.list-inline-item
+            i.fab.fa-bootstrap
+          li.list-inline-item
+            i.fab.fa-node-js
+          li.list-inline-item
+            i.fab.fa-npm
+          li.list-inline-item
+            i.fab.fa-node          
+          li.list-inline-item
+            i.fab.fa-android 
+          li.list-inline-item
+            i.fab.fa-java 
+          li.list-inline-item
+            i.fab.fa-git
+          li.list-inline-item
+            i.fab.fa-github
+          li.list-inline-item
+            i.fab.fa-bitbucket
+          li.list-inline-item
+            i.fab.fa-google  
+          li.list-inline-item
+            i.fab.fa-linux      
+          li.list-inline-item
+            i.fab.fa-windows                  
+        .subheading.mb-3 Flujo de Trabajo
+        ul.fa-ul.mb-0
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Habilidades de desarrollo Web &amp; Mobil
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Web, Web-App &amp; Mobil, Responsive Design
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Desarrollo mobil con lenguaje Java
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Dominio de IDE para la plataforma Android Studios 
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Pruebas &amp; Depuracion entre navegadores 
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Angular Framework
+          li
+            span.fa-li
+              i.fas.fa-check
+            | NodeJS &amp; Npm
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Server-Side Development with NodeJs &amp; Express
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Database MongoDB &amp; MySql
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Analisis de Datos
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Dominio de sistemas Windows &amp; Linux      
+    hr.m-0
+    // Interests
+    section#interests.resume-section
+      .resume-section-content
+        h2.mb-5 Intereses 
+        p
+          | Aparte de ser un desarrollador web, intento distribuir el tiempo en otras cosas que me interesan. Fuera de la casa intento hacer rutinas de ejercicios. Mis deporte preferidso son el beisol y el basquetbol, tambien ir a la playa los fines de semana, aun que prefiero el deporte.
+        p.mb-2 
+          | Cuando me veo obligado a entrar en casa, sigo una serie de películas y programas de televisión de ciencia ficción y fantasía, soy un aspirante a chef y paso gran parte de mi tiempo libre explorando los últimos avances tecnológicos en el mundo del desarrollo web front-end.
+        p.mb-0
+          | Cuando me veo obligado a entrar en casa, sigo una serie de películas y programas de televisión de ciencia ficción y fantasía, soy un aspirante a chef y paso gran parte de mi tiempo libre explorando los últimos avances tecnológicos en el mundo del desarrollo web front-end.  
+    hr.m-0
+    // Awards
+    section#awards.resume-section
+      .resume-section-content
+        h2.mb-5 Logros &amp; Certificaciones
+        ul.fa-ul.mb-0
+          li
+            span.fa-li
+              i.fas.fa-trophy.text-warning
+            | Google Analytics Certified Developer
+          li
+            span.fa-li
+              i.fas.fa-trophy.text-warning
+            | Mobile Web Specialist - Google Certification
+          li
+            span.fa-li
+              i.fas.fa-trophy.text-warning
+            | 1
+            sup st
+            | Place - University of Colorado Boulder - Emerging Tech Competition 2009
+          li
+            span.fa-li
+              i.fas.fa-trophy.text-warning
+            | 1
+            sup st
+            | Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+          li
+            span.fa-li
+              i.fas.fa-trophy.text-warning
+            | 2
+            sup nd
+            | Place - University of Colorado Boulder - Emerging Tech Competition 2008
+          li
+            span.fa-li
+              i.fas.fa-trophy.text-warning
+            | 1
+            sup st
+            | Place - James Buchanan High School - Hackathon 2006
+          li
+            span.fa-li
+              i.fas.fa-trophy.text-warning
+            | 3
+            sup rd
+            | Place - James Buchanan High School - Hackathon 2005
+  // Bootstrap core JS
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+  // Core theme JS
+  script(src='../../js/scripts.js')
+
